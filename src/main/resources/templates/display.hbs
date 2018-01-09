@@ -1,6 +1,6 @@
 {{#partial "content"}}
 
-<h1>List of Kombucha:</h1>
+<h1>List of Jobs:</h1>
     {{#if allJobs}}
         {{#each allJobs}}
             <p>Company: {{company}}</p>
@@ -9,6 +9,8 @@
             <p>Date started: {{dateStarted}}</p>
             <p>Date ended: {{dateEnded}}</p>
         {{/each}}
+    {{else}}
+    <p>You have no career. You are a loser.</p>
     {{/if}}
 
 {{/partial}}
