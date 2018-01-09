@@ -1,0 +1,16 @@
+{{#partial "content"}}
+
+<h1>List of Kombucha:</h1>
+    {{#if allJobs}}
+        {{#each allJobs}}
+            <p>Company: {{company}}</p>
+            <p>Job Title: {{jobTitle}}</p>
+            <p>Job Description: {{jobDescription}}</p>
+            <p>Date started: {{dateStarted}}</p>
+            <p>Date ended: {{dateEnded}}</p>
+        {{/each}}
+    {{/if}}
+
+{{/partial}}
+
+{{> layout.hbs}}

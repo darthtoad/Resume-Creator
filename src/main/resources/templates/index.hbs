@@ -1,0 +1,25 @@
+{{#partial "content"}}
+
+<h1>Add a Job</h1>
+
+<form action="/new" method="POST">
+    <label for="company">Name of Company</label>
+    <input id="company" name="company" type="text">
+
+    <label for="jobTitle">Job Title</label>
+    <input id="jobTitle" name="jobTitle" type="text">
+
+    <label for="jobDescription">Job Description</label>
+    <input id="jobDescription" name="jobDescription" type="text">
+
+    <label for="dateStarted">Date Started</label>
+    <input id="dateStarted" name="dateStarted" type="text">
+
+    <label for="dateEnded">Date Ended</label>
+    <input id="dateEnded" name="dateEnded" type="text">
+
+    <button type="submit">Submit</button>
+</form>
+{{/partial}}
+
+{{> layout.hbs}}
